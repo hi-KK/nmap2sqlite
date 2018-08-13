@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Thu Jul 26 14:04:53 2018 as: nmap -p 1911 -&#45;script fox-info -oX fox.xml 24.142.169.238 -->
+<nmaprun scanner="nmap" args="nmap -p 1911 -&#45;script fox-info -oX fox.xml 24.142.169.238" start="1532585093" startstr="Thu Jul 26 14:04:53 2018" version="7.60" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="1911"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1532585093" endtime="1532585094"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="24.142.169.238" addrtype="ipv4"/>
+<hostnames>
+<hostname name="rrcs-24-142-169-238.central.biz.rr.com" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="1911"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="niagara-fox" method="probed" conf="10"/><script id="fox-info" output="&#xa;  fox.version: 1.0.1&#xa;  hostName: 24.142.169.238&#xa;  hostAddress: 24.142.169.238&#xa;  app.name: Station&#xa;  app.version: 3.8.213&#xa;  vm.name: Java HotSpot(TM) Client VM&#xa;  vm.version: 1.5.0_81-b06&#xa;  os.name: QNX&#xa;  timeZone: America/New_York&#xa;  hostId: Qnx-NPM6-0000-1855-004E&#xa;  vmUuid: 11e87f1d-709f-54ba-0000-000000008047&#xa;  brandId: novar.opus"><elem key="fox.version">1.0.1</elem>
+<elem key="hostName">24.142.169.238</elem>
+<elem key="hostAddress">24.142.169.238</elem>
+<elem key="app.name">Station</elem>
+<elem key="app.version">3.8.213</elem>
+<elem key="vm.name">Java HotSpot(TM) Client VM</elem>
+<elem key="vm.version">1.5.0_81-b06</elem>
+<elem key="os.name">QNX</elem>
+<elem key="timeZone">America/New_York</elem>
+<elem key="hostId">Qnx-NPM6-0000-1855-004E</elem>
+<elem key="vmUuid">11e87f1d-709f-54ba-0000-000000008047</elem>
+<elem key="brandId">novar.opus</elem>
+</script></port>
+</ports>
+<times srtt="284692" rttvar="217315" to="1153952"/>
+</host>
+<runstats><finished time="1532585094" timestr="Thu Jul 26 14:04:54 2018" elapsed="1.63" summary="Nmap done at Thu Jul 26 14:04:54 2018; 1 IP address (1 host up) scanned in 1.63 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
