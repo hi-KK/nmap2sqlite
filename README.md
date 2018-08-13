@@ -2,7 +2,7 @@
 parse Nmap's XML output files and insert them into an SQLite database
 nmap2sqlite可以把Nmap导出的扫描结果XML文件进行解析，提取出关键信息保存到SQLite数据库中(其中关键在于可以把nmap加载扫描脚本的输出信息也提取到数据库中，而不是简单的保存主机IP、端口、服务之类)
 
-##使用方法
+## 使用方法
 
 ```
 $ python nmap2sqlite.py 
